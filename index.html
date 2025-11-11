@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - At Home Costa del Sol</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.05) 10px,
+                rgba(255,255,255,0.05) 20px
+            );
+            animation: slide 20s linear infinite;
+        }
+        
+        @keyframes slide {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 30px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+            padding: 25px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section h2::before {
+            content: '📋';
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .section h2:nth-child(1)::before { content: '🔒'; }
+        .section:nth-child(3) h2::before { content: '📊'; }
+        .section:nth-child(4) h2::before { content: '💬'; }
+        .section:nth-child(5) h2::before { content: '🎯'; }
+        .section:nth-child(6) h2::before { content: '⏰'; }
+        .section:nth-child(7) h2::before { content: '🛡️'; }
+        .section:nth-child(8) h2::before { content: '👤'; }
+        .section:nth-child(9) h2::before { content: '📞'; }
+        
+        .section p, .section li {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            padding-left: 20px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .contact-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Política de Privacidad</h1>
+            <div class="subtitle">At Home Costa del Sol - Comunicaciones Comerciales</div>
+        </div>
+        
+        <div class="content">
+            <div class="last-updated">
+                <strong>Última actualización:</strong> 11 de noviembre de 2025
+            </div>
+            
+            <div class="section">
+                <h2>Información General</h2>
+                <p>En <span class="highlight">At Home Costa del Sol</span>, nos comprometemos a proteger y respetar su privacidad. Esta política explica cómo recopilamos, utilizamos y protegemos su información personal cuando utilizamos nuestro sistema de comunicaciones comerciales a través de WhatsApp Business API para contactar con clientes potenciales.</p>
+                <p>Al haber contactado previamente con nosotros y proporcionar su número de teléfono, usted acepta las prácticas descritas en esta política de privacidad para recibir comunicaciones comerciales relacionadas con nuestros servicios inmobiliarios.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Datos que Recopilamos</h2>
+                <p>Para proporcionar nuestro servicio de comunicaciones comerciales inmobiliarias, recopilamos y procesamos los siguientes datos:</p>
+                <ul>
+                    <li><strong>Número de teléfono:</strong> Para contactar via WhatsApp con información comercial</li>
+                    <li><strong>Datos de contacto:</strong> Nombre, email si fue proporcionado anteriormente</li>
+                    <li><strong>Intereses inmobiliarios:</strong> Tipo de propiedad buscada, ubicación preferida, presupuesto</li>
+                    <li><strong>Historial de consultas:</strong> Propiedades consultadas en portales inmobiliarios</li>
+                    <li><strong>Origen del contacto:</strong> Portal inmobiliario desde donde se originó el contacto inicial</li>
+                    <li><strong>Historial de comunicaciones:</strong> Fechas y tipos de comunicaciones enviadas</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Uso de WhatsApp Business API</h2>
+                <p>Utilizamos la <span class="highlight">WhatsApp Business API</span> para enviar comunicaciones comerciales relacionadas con servicios inmobiliarios. Esto implica:</p>
+                <ul>
+                    <li>Envío de información sobre propiedades que puedan interesarle</li>
+                    <li>Ofertas y promociones de nuestros servicios inmobiliarios</li>
+                    <li>Respuestas a consultas previas realizadas en portales inmobiliarios</li>
+                    <li>Cumplimiento de las políticas de WhatsApp Business API y normativa de protección de datos</li>
+                    <li>No almacenamos el contenido de las conversaciones de WhatsApp</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Finalidad del Tratamiento</h2>
+                <p>Utilizamos sus datos personales exclusivamente para:</p>
+                <ul>
+                    <li><strong>Comunicaciones comerciales:</strong> Informar sobre propiedades disponibles que puedan ser de su interés</li>
+                    <li><strong>Seguimiento comercial:</strong> Dar respuesta a consultas realizadas en portales inmobiliarios</li>
+                    <li><strong>Información de servicios:</strong> Proporcionar detalles sobre nuestros servicios inmobiliarios</li>
+                    <li><strong>Ofertas personalizadas:</strong> Enviar propuestas adaptadas a sus preferencias manifestadas</li>
+                    <li><strong>Control de frecuencia:</strong> Gestionar la frecuencia de comunicaciones para evitar saturación</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Retención de Datos</h2>
+                <p>Conservamos sus datos personales durante el tiempo necesario para:</p>
+                <ul>
+                    <li><strong>Relación comercial activa:</strong> Mientras mantenga interés en nuestros servicios</li>
+                    <li><strong>Historial de comunicaciones:</strong> 3 años desde la última comunicación enviada</li>
+                    <li><strong>Obligaciones legales:</strong> Según requiera la legislación vigente</li>
+                    <li><strong>Gestión de oposición:</strong> Mantenemos registro de solicitudes de baja para respetar su decisión</li>
+                </ul>
+                <p>Una vez cumplidos estos plazos, procedemos a la eliminación segura de sus datos.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Seguridad y Protección</h2>
+                <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas:</p>
+                <ul>
+                    <li><strong>Cifrado:</strong> Todas las comunicaciones utilizan protocolos seguros (HTTPS/TLS)</li>
+                    <li><strong>Acceso restringido:</strong> Solo personal autorizado puede acceder a los datos</li>
+                    <li><strong>Base de datos segura:</strong> Almacenamiento en sistemas seguros con medidas de protección</li>
+                    <li><strong>API protegida:</strong> Uso de claves API para autenticación</li>
+                    <li><strong>Auditorías:</strong> Registro de todas las operaciones del sistema</li>
+                    <li><strong>Formación del personal:</strong> Capacitación en protección de datos</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Sus Derechos</h2>
+                <p>Como titular de los datos, usted tiene derecho a:</p>
+                <ul>
+                    <li><strong>Acceso:</strong> Solicitar información sobre qué datos tenemos sobre usted</li>
+                    <li><strong>Rectificación:</strong> Corregir datos inexactos o incompletos</li>
+                    <li><strong>Supresión:</strong> Solicitar la eliminación de sus datos personales</li>
+                    <li><strong>Limitación:</strong> Restringir el procesamiento de sus datos</li>
+                    <li><strong>Oposición:</strong> Oponerse al tratamiento de sus datos para comunicaciones comerciales</li>
+                    <li><strong>Portabilidad:</strong> Recibir sus datos en formato estructurado</li>
+                    <li><strong>Baja voluntaria:</strong> Solicitar en cualquier momento cesar las comunicaciones comerciales</li>
+                </ul>
+                <p>Para ejercer estos derechos o darse de baja, puede responder "BAJA" a cualquier mensaje o contactar con nosotros.</p>
+            </div>
+            
+            <div class="contact-info">
+                <h3>📞 Información de Contacto</h3>
+                <p>Para cualquier consulta sobre esta política de privacidad o para ejercer sus derechos:</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>📧 Email</strong><br>
+                        info@athomecostadelsol.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>📱 Teléfono</strong><br>
+                        +34 673 121 765
+                    </div>
+                    <div class="contact-item">
+                        <strong>🏢 Empresa</strong><br>
+                        At Home Costa del Sol S.L.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Modificaciones</h2>
+                <p>Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en esta página.</p>
+                <p>Le recomendamos revisar periódicamente esta política para mantenerse informado sobre cómo protegemos su información.</p>
+                <p><strong>Base legal:</strong> El tratamiento se basa en el interés legítimo de la empresa para el desarrollo de actividad comercial, habiéndose iniciado una relación previa por parte del interesado.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            © 2025 At Home Costa del Sol S.L. - Todos los derechos reservados | Política de Privacidad v3.0
+        </div>
+    </div>
+</body>
+</html>
